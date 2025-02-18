@@ -17,10 +17,8 @@ export class HomePage {
       .getByRole("button");
     this.backPackRemoveButton = page.getByRole("button", { name: "REMOVE" });
 
-    // this.cartIcon = page.getByRole('link', { name: '1' });
     this.cartIcon = page.locator("id=shopping_cart_container");
 
-    // this.homePageHeading = page.getByText("Swag Labs");
     this.homePageHeading = page.locator("//div[@class='app_logo']");
   }
 
